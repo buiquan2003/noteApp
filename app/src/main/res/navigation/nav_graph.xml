@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.example.noteapp.presentation.ui.fragment.splash.Splash"
+        android:label="Splash"
+        tools:layout="@layout/splash_fragment">
+        <action
+            android:id="@+id/action_splash_to_logInFragment"
+            app:destination="@id/logInFragment" />
+        <action
+            android:id="@+id/action_splash_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.noteapp.presentation.ui.fragment.signUp.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/sign_up_fragment"/>
+    <fragment
+        android:id="@+id/CalendarFragment"
+        android:name="com.example.noteapp.presentation.ui.fragment.calender.CalenderFragment"
+        android:label="CalenderFragment"
+        tools:layout="@layout/calender_fragment"/>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.noteapp.presentation.ui.fragment.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.noteapp.presentation.ui.fragment.search.SearchFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/search_fragment"/>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.noteapp.presentation.ui.fragment.user.UserFragment"
+        android:label="UserFragment" />
+
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.example.noteapp.presentation.ui.fragment.login.LogInFragment"
+        android:label="LogInFragment"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_logInFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_logInFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.noteapp.presentation.ui.fragment.addNote.AddFragment"
+        android:label="AddFragment" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.noteapp.presentation.ui.fragment.detailNote.DetailFragment"
+        android:label="DetailFragment" />
+
+</navigation>

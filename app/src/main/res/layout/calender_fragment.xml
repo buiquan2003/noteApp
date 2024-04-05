@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtCalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Calender"
+        android:textSize="@dimen/text_size_32sp"
+        android:layout_marginTop="@dimen/size_12_dp"
+        android:layout_marginStart="@dimen/size_12_dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconCalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_calendar"
+        android:layout_marginTop="@dimen/size_32_dp"
+        app:layout_constraintTop_toBottomOf="@id/txtCalender"
+        app:layout_constraintStart_toStartOf="@id/txtCalender" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/March"
+        android:layout_marginStart="@dimen/size_12_dp"
+        android:textSize="@dimen/text_size_28sp"
+        app:layout_constraintTop_toTopOf="@id/iconCalender"
+        app:layout_constraintBottom_toBottomOf="@id/iconCalender"
+        app:layout_constraintStart_toEndOf="@id/iconCalender" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconBackCalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_icon_calender"
+        android:src="@drawable/ic_keyboard_arrow_left_24"
+        app:layout_constraintBottom_toBottomOf="@id/txtMonth"
+        app:layout_constraintTop_toTopOf="@id/txtMonth"
+        android:layout_marginStart="@dimen/size_32_dp"
+        app:layout_constraintStart_toEndOf="@id/txtMonth" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconNextCalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_icon_calender"
+        android:src="@drawable/ic_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="@id/iconBackCalender"
+        app:layout_constraintTop_toTopOf="@id/iconBackCalender"
+        android:layout_marginStart="@dimen/size_32_dp"
+        app:layout_constraintStart_toEndOf="@id/iconBackCalender" />
+
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        app:compactCalendarCurrentDayBackgroundColor="#689F38"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#73D8E5"
+        app:compactCalendarMultiEventIndicatorColor="@color/blue"
+        app:compactCalendarTextColor="@color/black"
+        app:compactCalendarTextSize="12sp"
+        android:layout_marginTop="@dimen/size_24_dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtMonth"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

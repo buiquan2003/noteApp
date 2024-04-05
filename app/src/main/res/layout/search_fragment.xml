@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/txtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_item_note"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="@dimen/size_8_dp"
+        android:hint="@string/Search"
+        android:padding="@dimen/size_4_dp"
+        android:drawableEnd="@drawable/ic_x"
+        android:textSize="@dimen/text_size_18sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iconSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_16sp"
+        android:text="@string/file_note_found"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/iconSearch"
+        app:layout_constraintEnd_toEndOf="@id/iconSearch"
+        app:layout_constraintStart_toStartOf="@id/iconSearch"
+        android:layout_marginTop="@dimen/size_8_dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

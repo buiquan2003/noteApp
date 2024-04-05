@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_28sp">28sp</dimen>
+    <dimen name="text_size_32sp">32sp</dimen>
+    <dimen name="text_size_48sp">48sp</dimen>
+    <dimen name="text_size_app_name">48sp</dimen>
+
+    <dimen name="size_0_dp">0dp</dimen>
+    <dimen name="size_4_dp">4dp</dimen>
+    <dimen name="size_8_dp">8dp</dimen>
+    <dimen name="size_12_dp">12dp</dimen>
+    <dimen name="size_16_dp">16dp</dimen>
+    <dimen name="size_18_dp">18dp</dimen>
+    <dimen name="size_20_dp">20dp</dimen>
+    <dimen name="size_24_dp">24dp</dimen>
+    <dimen name="size_32_dp">32dp</dimen>
+    <dimen name="size_36_dp">36dp</dimen>
+    <dimen name="size_40_dp">40dp</dimen>
+    <dimen name="size_44_dp">44dp</dimen>
+    <dimen name="size_48_dp">48dp</dimen>
+    <dimen name="size_52_dp">52dp</dimen>
+    <dimen name="size_56_dp">56dp</dimen>
+    <dimen name="size_60_dp">60dp</dimen>
+    <dimen name="size_64_dp">64dp</dimen>
+    <dimen name="size_72_dp">72dp</dimen>
+    <dimen name="size_80_dp">80dp</dimen>
+    <dimen name="size_100_dp">100dp</dimen>
+    <dimen name="size_120_dp">120dp</dimen>
+
+    <dimen name="height_bottom_bar">60dp</dimen>
+    <dimen name="size_icon_svg">48dp</dimen>
+    <dimen name="height_search_bar">56dp</dimen>
+
+</resources>
