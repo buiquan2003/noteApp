@@ -52,7 +52,7 @@ dependencies {
     val roomVersion = "2.5.1"
     val retrofitVersion = "2.9.0"
     val okhttpsversion = "4.10.0"
-    val coroutineVersion = "11.6.4"
+    val coroutineVersion = "1.3.9"
     val timerVersion = "5.0.1"
     val firebase = "31.3.0"
 

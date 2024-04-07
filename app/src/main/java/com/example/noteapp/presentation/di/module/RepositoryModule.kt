@@ -1,7 +1,7 @@
 package com.example.noteapp.presentation.di.module
 
-import androidx.room.Database
 import com.example.noteapp.data.local.database.AppDao
+import com.example.noteapp.data.network.ApiService
 import com.example.noteapp.data.repository.NoteRepositoryLmp
 import com.example.noteapp.data.repository.UserAuthRepositoryImp
 import com.example.noteapp.domain.repository.NoteRepository
@@ -18,9 +18,10 @@ class RepositoryModule {
     @ApplicationScope
     @Provides
     fun providesAuthRepository(
+        apiService: ApiService,
         firebaseAuth: FirebaseAuth,
         appDao: AppDao,
-    ):UserAuthRepository = UserAuthRepositoryImp(firebaseAuth, appDao)
+    ):UserAuthRepository = UserAuthRepositoryImp(apiService, firebaseAuth, appDao)
 
     @ApplicationScope
     @Provides
