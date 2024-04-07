@@ -4,6 +4,7 @@ import android.util.Log
 import com.example.noteapp.R
 import com.example.noteapp.data.local.database.AppDao
 import com.example.noteapp.data.model.UserAuth
+import com.example.noteapp.data.network.ApiService
 import com.example.noteapp.domain.repository.UserAuthRepository
 import com.example.noteapp.extensions.Resource
 import com.google.firebase.auth.FirebaseAuth
@@ -17,6 +18,7 @@ import java.lang.IllegalArgumentException
 import javax.inject.Inject
 
 class UserAuthRepositoryImp @Inject constructor(
+    private val apiService: ApiService,
     private val firebaseAuth: FirebaseAuth,
     private val appDao: AppDao
 
